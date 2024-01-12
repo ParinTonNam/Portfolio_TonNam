@@ -226,7 +226,7 @@
       .pic_photo {
         width: auto;
         /* height: auto; */
-        max-height: 20em;
+        max-height: 17em;
         background: cover;
         border-radius: 15px;
         box-shadow: 0px 5px 10px #0005;
