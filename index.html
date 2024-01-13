@@ -8,10 +8,11 @@
   <link
     href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped&family=Kanit:ital@1&family=Roboto+Slab&display=swap"
     rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto+Slab:wght@300&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="script.js"></script>
-  <title >My Portfolio</title>
+  <title>My Portfolio</title>
 </head>
 
 <body>
@@ -23,9 +24,9 @@
       <a href="#me1">Home</a>
       <a href="#me2">About Me</a>
       <a href="#me3">Experience</a>
-      <a href="#me4">Activies</a>
+      <a href="#me4">Activities</a>
       <a href="#me5">Academy Projects</a>
-      <a href="img/Resume.pdf" download="Resume">My Resume</a>
+
     </div>
   </nav>
 
@@ -44,20 +45,28 @@
       <h2 style="font-size: 3rem;">About Me</h2>
       <h2 style="font-size: 2.1rem;">Parin Dechakorn [TonNam]</h2>
       <h2 style="font-size: 1.5rem; padding-bottom: 1rem;">Multimedia , IT KMITL Student </h2>
-      <h3 style="font-size: 1rem;">
+      <h3 style="font-size: 1rem; 
+      line-height:30px;
+      font-family: 'PT Serif', serif;
+      font-family: 'Roboto Slab', serif;">
         <p>
-          I am a student of the Information Technology 's Multimedia . King Mongkut's Institute of Technology Ladkrabang.
+          I am a student of the Information Technology 's Multimedia . King Mongkut's Institute of Technology
+          Ladkrabang.
           I can do Front End development with use UX/UI design principles for website development. and I have basic in
-          using the Maya program to create 3D models, including use Unreal Engine 5 at a moderate level. I am a person who
+          using the Maya program to create 3D models, including use Unreal Engine 5 at a moderate level. I am a person
+          who
           interacts well and is friendly with others. I am always determined and out in the effort to learn new things.
       </h3>
+      <a href="img/Resume.pdf" download="Resume" target="_blank">
+        <button class="button button1">My Resume</button>
+      </a>
     </div>
     <div class="pic_h">
       <img class="pic_me" src="img/me_3.jpg">
     </div>
   </section>
 
-  
+
   <!-- Work Experience -->
   <h2 class="head_text" id="me3">
     Work Experience
@@ -69,12 +78,12 @@
         <img class="pic_photo image" src="img/smo1.jpg">
         <img class="pic_photo hidden-image" src="img/smo3.jpg">
       </div>
-      <h2 style="font-size: 1.5rem;justify-content: center;
+      <h2 style="font-size: 1.3rem;justify-content: center;
       align-items: center;">Secretary IT Student Association 2022 & 2023</h2>
     </div>
     <div class="pic_h">
       <img class="pic_photo" src="img/work1.jpg">
-      <h2 style="font-size: 1.5rem;justify-content: center;
+      <h2 style="font-size: 1.3rem;justify-content: center;
       align-items: center;">Teacher Assistant Multimedia Technology</h2>
     </div>
   </section>
@@ -84,7 +93,7 @@
   <h2 class="head_text" style="background-color: rgb(255, 255, 255);" id="me4">
     Activies
   </h2>
-  <section class="article_3" >
+  <section class="article_3">
 
     <div class="pic_h">
       <div class="image-container">
@@ -98,7 +107,10 @@
     </div>
 
     <div class="pic_h">
-      <img class="pic_photo" src="img/at3.jpg">
+      <div class="image-container">
+        <img class="pic_photo image" src="img/at3.jpg">
+        <img class="pic_photo hidden-image" src="img/at13.jpg">
+      </div>
       <h2 style="font-size: 1.5rem;justify-content: center;
       align-items: center;">Secretary Head</h2>
       <h4 style="font-size: 1rem;justify-content: center;
@@ -113,7 +125,7 @@
       </div>
       <h2 style="font-size: 1.5rem;justify-content: center;
       align-items: center;">ITLadkrabangOpenhouse</h2>
-            <h4 style="font-size: 1rem;justify-content: center;
+      <h4 style="font-size: 1rem;justify-content: center;
             align-items: center; margin-top: 0;">2022 , 2023(Head)</h4>
     </div>
 
@@ -125,7 +137,7 @@
       </div>
       <h2 style="font-size: 1.5rem;justify-content: center;
       align-items: center;">Volunteer </h2>
-            <h4 style="font-size: 1rem;justify-content: center;
+      <h4 style="font-size: 1rem;justify-content: center;
             align-items: center; margin-top: 0;">at IT ASA 10, IT ASA 11</h4>
     </div>
 
@@ -137,7 +149,7 @@
       </div>
       <h2 style="font-size: 1.5rem;justify-content: center;
       align-items: center;">Teacher Assistant "Game Site"</h2>
-            <h4 style="font-size: 1rem;justify-content: center;
+      <h4 style="font-size: 1rem;justify-content: center;
             align-items: center; margin-top: 0;">at IT CAMP 19</h4>
     </div>
 
@@ -149,7 +161,7 @@
       </div>
       <h2 style="font-size: 1.5rem;justify-content: center;
       align-items: center;">Recreation Activities</h2>
-            <h4 style="font-size: 1rem;justify-content: center;
+      <h4 style="font-size: 1rem;justify-content: center;
             align-items: center; margin-top: 0;">at IT CAMP 18</h4>
     </div>
 
@@ -173,59 +185,59 @@
           align-items: center;">Create website by using HTML, CSS, JS</h2>
         <h2 style="font-size: 1rem;;
         align-items: center;">1st year project</h2>
-       </div>
-  </div>
-
-  <!-- Adibas Cafe -->
-  <div>
-    <div class="image-container">
-      <img class="pic_photo image" src="img/pj3.png">
-      <img class="pic_photo hidden-image" src="img/pj4.png">
+      </div>
     </div>
-    <div style="text-align: center;">
-      <a href="https://478a440a-a262-413d-9763-0cb60cb81df8-00-1encwzfp5vzuj.worf.replit.dev/" target="_blank">
-        <p style="font-size: 1.5rem;">Shopping Website “Adibas Cafe” Frontend Website”</p>
-      </a>
-      <h2 style="font-size: 1rem;;
+
+    <!-- Adibas Cafe -->
+    <div>
+      <div class="image-container">
+        <img class="pic_photo image" src="img/pj3.png">
+        <img class="pic_photo hidden-image" src="img/pj4.png">
+      </div>
+      <div style="text-align: center;">
+        <a href="https://478a440a-a262-413d-9763-0cb60cb81df8-00-1encwzfp5vzuj.worf.replit.dev/" target="_blank">
+          <p style="font-size: 1.5rem;">Shopping Website “Adibas Cafe” Frontend Website”</p>
+        </a>
+        <h2 style="font-size: 1rem;;
         align-items: center;">Create website by HTML, CSS, JS</h2>
-      <h2 style="font-size: 1rem;;
+        <h2 style="font-size: 1rem;;
       align-items: center;">2nd year project</h2>
-     </div>
-  </div>
-
-  <!-- Left Over -->
-  <div>
-    <div class="image-container">
-      <img class="pic_photo image" src="img/pj5.png">
-      <img class="pic_photo hidden-image" src="img/pj6.png">
+      </div>
     </div>
-    <div style="text-align: center;">
-      <a href="https://main--leftoverproject.netlify.app/" target="_blank">
-        <p style="font-size: 1.5rem;">SDG Website “Left Over” Frontend Website</p>
-      </a>
-      <h2 style="font-size: 1rem;;
+
+    <!-- Left Over -->
+    <div>
+      <div class="image-container">
+        <img class="pic_photo image" src="img/pj5.png">
+        <img class="pic_photo hidden-image" src="img/pj6.png">
+      </div>
+      <div style="text-align: center;">
+        <a href="https://main--leftoverproject.netlify.app/" target="_blank">
+          <p style="font-size: 1.5rem;">SDG Website “Left Over” Frontend Website</p>
+        </a>
+        <h2 style="font-size: 1rem;;
         align-items: center;">Create website by using HTML, CSS, JS</h2>
-      <h2 style="font-size: 1rem;;
+        <h2 style="font-size: 1rem;;
       align-items: center;">3rd year project</h2>
-     </div>
-  </div>
-
-  <!-- Alchemist Quest -->
-  <div>
-    <div class="image-container">
-      <img class="pic_photo image" src="img/pj7.png">
-      <img class="pic_photo hidden-image" src="img/pj8.png">
+      </div>
     </div>
-    <div style="text-align: center;">
-      <a href="https://youtu.be/vFCDg8AToK4" target="_blank">
-        <p style="font-size: 1.5rem;">Demo Geme “Alchemist Quest”</p>
-      </a>
-      <h2 style="font-size: 1rem;;
+
+    <!-- Alchemist Quest -->
+    <div>
+      <div class="image-container">
+        <img class="pic_photo image" src="img/pj7.png">
+        <img class="pic_photo hidden-image" src="img/pj8.png">
+      </div>
+      <div style="text-align: center;">
+        <a href="https://youtu.be/vFCDg8AToK4" target="_blank">
+          <p style="font-size: 1.5rem;">Demo Geme “Alchemist Quest”</p>
+        </a>
+        <h2 style="font-size: 1rem;;
         align-items: center;">Create Game by Unreal Engine 4.27</h2>
-      <h2 style="font-size: 1rem;;
+        <h2 style="font-size: 1rem;;
       align-items: center;">3rd year project</h2>
-     </div>
-  </div>
+      </div>
+    </div>
   </section>
 
 
@@ -239,25 +251,25 @@
         Thank for watching my Website. <br>
         I hope You Like it.
       </p>
-      
-        <div class="social">
-          <a href="https://www.facebook.com/TonNamParin" target="_blank" id="click">
-            <i class="fab fa-facebook-square">
-            </i>
-          </a>
-          <a href="https://www.instagram.com/tonnam_exe/" target="_blank" id="click">
-            <i class="fab fa-instagram">
-            </i>
-          </a>
-          <a href="https://github.com/ParinTonNam" target="_blank" id="click">
-            <i class="fab fa-Github">
-            </i>
-          </a>
-          <a href="https://www.linkedin.com/in/parin-dechakorn-75a6202a5/" target="_blank" id="click">
-            <i class="fab fa-linkedin">
-            </i>
-          </a>
-        </div>
+
+      <div class="social">
+        <a href="https://www.facebook.com/TonNamParin" target="_blank" id="click">
+          <i class="fab fa-facebook-square">
+          </i>
+        </a>
+        <a href="https://www.instagram.com/tonnam_exe/" target="_blank" id="click">
+          <i class="fab fa-instagram">
+          </i>
+        </a>
+        <a href="https://github.com/ParinTonNam" target="_blank" id="click">
+          <i class="fab fa-Github">
+          </i>
+        </a>
+        <a href="https://www.linkedin.com/in/parin-dechakorn-75a6202a5/" target="_blank" id="click">
+          <i class="fab fa-linkedin">
+          </i>
+        </a>
+      </div>
     </div>
   </footer>
 
