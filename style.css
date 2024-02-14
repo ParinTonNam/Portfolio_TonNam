@@ -5,6 +5,7 @@
         font-family: 'Roboto Slab', serif;
         user-select: none;
         scroll-behavior: smooth;
+        width: 100%;
     }
     body {
       background: rgb(255, 255, 255);
@@ -23,7 +24,7 @@
     nav {
       height: 64px;
       display: flex;
-      background-color:#357;
+      background-color:rgb(255, 255, 255);
       color: white;
       align-items: center;
       justify-content: space-between;
@@ -33,6 +34,7 @@
       position: sticky;
       top: 0px;
       z-index: 5;
+      opacity: 0.8;
     }
 
     nav .nav-items {
@@ -51,7 +53,7 @@
       font-size: 0.5em;
       font-weight: bold;
       transition: all .2s;
-      color: white;
+      color: rgb(69, 64, 114);
     }
 
     nav a:hover {
@@ -84,7 +86,7 @@
       position: relative;
     }
 
-    .header-inner {
+    .header-inner1 {
       background-image: linear-gradient(to bottom, #0004, #000c);
       width: 100%;
       height: 100%;
@@ -93,6 +95,14 @@
       display: flex;
       flex-flow: column wrap;
       font-size: 1.5em;
+    }
+    .header-inner2 {
+      font-size: 3rem; 
+      margin: 1rem;
+    }
+    .header-inner3 {
+      font-size: 2rem; 
+      margin: 1rem;
     }
 
     .header-inner h1,
@@ -119,6 +129,20 @@
       position: relative;
       gap: 4rem;
     }
+    .article_7 {
+      display: none;
+      grid-template-columns: 50% 50%;
+      max-width:100%;
+      background-color: antiquewhite;
+      margin: auto;
+      padding-top: 2em;
+      padding-left: 20em;
+      padding-right: 20em;
+      padding-bottom: 5em;
+      background-attachment: fixed;
+      position: relative;
+      gap: 4rem;
+    }
 
     .article_2 {
         display: grid;
@@ -127,7 +151,7 @@
         background-color: antiquewhite;
         margin: auto;
         padding-top:2em;
-        padding-left: 15%;
+        padding-left: 20%;
         padding-right: 20%;
         padding-bottom: 0%;
         background-attachment: fixed;
@@ -219,6 +243,15 @@
         border-radius: 15px;
         box-shadow: 0px 5px 10px #0005;
         object-fit: contain;
+        visibility: visible
+      }
+
+    .pic_me2 {
+        width: 80%;
+        border-radius: 15px;
+        box-shadow: 0px 5px 10px #0005;
+        object-fit: contain;
+        visibility: hidden;
       }
 
       .pic_photo {
@@ -274,7 +307,11 @@
   }
 
 
-
+    .head{
+      margin-left: 1rem; 
+      width: calc(100% - 1.5rem); 
+      color:black;
+    }
     #footer {
       background-image:url('img/bg4.jpg');
       padding: 2em 1 3em;
@@ -316,3 +353,77 @@
     }
     
     .button1 {background-color: #c4bc8d;} /* Green */
+
+    @media only screen and (max-width: 1000px) {
+      .article_1 {
+        display: none;
+        grid-template-columns:100%;
+        padding-top:5%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 5%;
+      }
+      .article_7 {
+        display: grid;
+        grid-template-columns:100%;
+        padding-top:5%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 5%;
+      }
+      .article_2{
+        grid-template-columns:100%;
+      }
+      .article_4{
+        grid-template-columns:100%;
+      }
+      #me1{
+        font-size: 3rem; 
+        margin: 0.5rem;
+      }
+      #me2{
+        font-size: 2.5rem; 
+        margin: 0.5rem;
+      }
+      #me3{
+        font-size: 2rem; 
+        margin: 0.5rem;
+      }
+      .head_text{
+        font-size: 3.5rem;
+      }
+
+    }
+    @media only screen and (max-width: 500px) {
+      #me1{
+        font-size: 1.5rem; 
+        margin: 0.5rem;
+      }
+      #me2{
+        font-size: 1rem; 
+        margin: 0.5rem;
+      }
+      #me3{
+        font-size: 0.5rem; 
+        margin: 0.5rem;
+      }
+      .pic_photo {
+        width: 90%;
+        border-radius: 15px;
+        box-shadow: 0px 5px 10px #0005;
+        margin: 1em 0 2em;
+      }
+      nav .nav-items{
+        width: calc(50% - 1rem);
+        margin-right: 2rem;
+      }
+      .head{
+        visibility: hidden;
+        
+      }
+      .head_text{
+        margin-left: 2rem;
+        margin-right: 2rem;
+      }
+      
+    }
